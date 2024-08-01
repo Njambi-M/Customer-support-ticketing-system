@@ -1,5 +1,5 @@
 import React from 'react';
-import { XCircleIcon } from '@heroicons/react/24/outline'; // Using Heroicons for menu icons
+import { XCircleIcon, Bars3Icon } from '@heroicons/react/24/outline'; // Using Heroicons for menu icons
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -21,11 +21,11 @@ export default function NavBar() {
               onClick={toggleMenu}
             >
               <span className="sr-only">Open main menu</span>
-              {/* {isOpen ? (
+              {isOpen ? (
                 <XCircleIcon className="block h-6 w-6" aria-hidden="true" />
               ) : (
-                // <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-              )} */}
+                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+              )}
             </button>
           </div>
           <div className="flex-1 flex items-center justify-between sm:items-stretch">
