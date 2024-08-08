@@ -7,11 +7,9 @@ import { Button } from "../components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "../components/ui/form";
 import { Input } from "../components/ui/input";
 
@@ -53,10 +51,6 @@ export default function Login() {
                   <FormControl>
                     <Input placeholder="Enter your email address" {...field} />
                   </FormControl>
-                  <FormDescription>
-                    This is your public display name.
-                  </FormDescription>
-                  <FormMessage />
                 </FormItem>
               )}
             />
