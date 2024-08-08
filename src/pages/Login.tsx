@@ -37,9 +37,9 @@ export default function Login() {
     console.log(values);
   }
   return (
-    <div>
-      <div className="login">
-        <h1>Sign into your account</h1>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="login p-6 w-full max-w-md">
+        <h1 className="text-xl text-center font-bold  mb-3">Sign into your account</h1>
         <p>If you are new, <Link to ="/register" className="font-semibold">sign up</Link> </p><br/>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -48,7 +48,7 @@ export default function Login() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Username:</FormLabel>
+                  <FormLabel className="flex">Username:</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter your email address" {...field} />
                   </FormControl>
@@ -61,7 +61,7 @@ export default function Login() {
                 name="password"
                 render={({field}) => (
                     <FormItem>
-                        <FormLabel>Password:</FormLabel>
+                        <FormLabel className="flex">Password:</FormLabel>
                             <FormControl>
                                 <Input 
                                 type="password"
@@ -73,14 +73,14 @@ export default function Login() {
                     </FormItem>
                 )}
                 />
-            <Button type="submit">Sign In</Button>
+            <Button type="submit" className="w-full">Sign In</Button>
             <div className="flex items-center mb-4">
               <div className="flex-grow h-px bg-gray-300" />
               <span className=" text-sm text-gray-500 ">or continue with</span>
               <div className="flex-grow h-px bg-gray-300" />
             </div>
             <div className="flex justify-center">
-              <Button>
+              <Button className="w-full">
             <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
