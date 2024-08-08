@@ -43,8 +43,8 @@ export default function Contact() {
 
   return (
     <div className="md:mx-20 md:h-screen my-10">
-      <div className="md:grid grid-cols-2">
-        <div className="flex flex-col justify-start items-start p-2 ml-7 max-sm:p-4">
+      <div className="md:grid grid-cols-2 ">
+        <div className="flex flex-col justify-start items-start p-2 ml-7 max-sm:p-4 b">
           <h1 className="font-bold text-6xl mb-10">Contact us</h1>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
@@ -54,7 +54,7 @@ export default function Contact() {
                   name="firstName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>First Name</FormLabel>
+                      <FormLabel className="flex">First Name</FormLabel>
                       <FormControl>
                         <Input placeholder="John" {...field} />
                       </FormControl>
@@ -67,7 +67,7 @@ export default function Contact() {
                   name="lastName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Last Name</FormLabel>
+                      <FormLabel className="flex">Last Name</FormLabel>
                       <FormControl>
                         <Input placeholder="Doe" {...field} />
                       </FormControl>
@@ -81,7 +81,7 @@ export default function Contact() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email address</FormLabel>
+                    <FormLabel className="flex">Email address</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="jdoe@gmail.com"
@@ -97,7 +97,7 @@ export default function Contact() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Your message</FormLabel>
+                    <FormLabel className="flex">Your message</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="Enter your question or message"
