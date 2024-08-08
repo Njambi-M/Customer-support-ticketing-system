@@ -38,7 +38,7 @@ export default function Login() {
   }
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="login p-6 w-full max-w-md">
+      <div className="p-6 w-full max-w-md border-solid border-2 border-slate-100 rounded-md">
         <h1 className="text-xl text-center font-bold  mb-3">Sign into your account</h1>
         <p>If you are new, <Link to ="/register" className="font-semibold">sign up</Link> </p><br/>
         <Form {...form}>
