@@ -109,6 +109,15 @@ export default function Login() {
                 <span> Google</span>
                 </Button>
               </div>
+              <p className="text-sm text-center">
+              By clicking continue, you agree to our{" "}
+              <a href="#" className="font-bold">
+                Terms of
+                <br />
+                Service
+              </a>{" "}
+              and <a href="#">Privacy Policy</a>
+            </p>
           </form>
         </Form>
       </div>
