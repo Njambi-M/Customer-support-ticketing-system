@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <div className="md:mx-20 md:h-screen my-10">
-      <div className="md:grid grid-cols-2 ">
+      <div className="md:grid grid-cols-2 order-solid border-2 border-slate-100 rounded-md">
         <div className="flex flex-col justify-start items-start p-2 ml-7 max-sm:p-4 b">
           <h1 className="font-bold text-6xl mb-10">Contact us</h1>
           <Form {...form}>
