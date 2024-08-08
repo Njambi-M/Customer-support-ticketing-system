@@ -1,4 +1,8 @@
-import React from 'react';
+"use client";
+
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import { Textarea } from "@/components/ui/textarea";
 
 import {
@@ -13,6 +17,14 @@ import { Input } from "../components/ui/input";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 
+const formSchema = z.object({
+    firstName: z.string(),
+    lastName: z.string(),
+    email: z.string().email({ message: "Invalid email address" }),
+    message: z.string(),
+  });
+
 export default function Contact(){
+
     
 }
