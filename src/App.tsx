@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar'
 import './styles/globals.css'
 import AppRouter from './Router';
+// import Login from './pages/Login';
 
 function App() {
   return (
