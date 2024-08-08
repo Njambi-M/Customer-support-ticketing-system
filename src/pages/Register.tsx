@@ -52,7 +52,7 @@ export default function Register() {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen mt-11 mb-11">
       <div className="p-6 w-full max-w-md border-solid border-2 border-slate-100 rounded-md">
         <h1 className="text-xl text-center font-bold  mb-3">
           Register for an account
