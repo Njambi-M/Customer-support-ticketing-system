@@ -97,7 +97,7 @@ export default function Register() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="flex">Username:</FormLabel>
+                  <FormLabel className="flex">Email address:</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter your email address" {...field} />
                   </FormControl>
