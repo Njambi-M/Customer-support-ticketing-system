@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="flex justify-evenly my-8">
       <div>
         <h1>Welcome to Customer Ticketing</h1>
         <p>Raise a ticket and have your issue solved within minutes</p>
