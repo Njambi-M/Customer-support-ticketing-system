@@ -8,7 +8,7 @@ export default function Homepage(){
                 <p>Raise a ticket and have your issue solved within minutes</p>
             </div>
             <div>
-                
+              <img src="/ticket.png"/>  
             </div>
         </div>
     );
