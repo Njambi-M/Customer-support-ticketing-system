@@ -10,19 +10,19 @@ export default function AdminSideBar() {
           <nav className="flex flex-col space-y-2">
             <Link
               to="#"
-              className="flex items-center gap-5 text-muted-foreground transition-colors hover:text-primary p-2"
+              className="flex items-center gap-5 text-base text-muted-foreground transition-colors hover:text-primary p-2"
             >
               View all tickets
             </Link>
             <Link
               to="#"
-              className="flex items-center gap-5 text-muted-foreground transition-colors hover:text-primary p-2"
+              className="flex items-center gap-5 text-base text-muted-foreground transition-colors hover:text-primary p-2"
             >
               Solved tickets
             </Link>
             <Link
               to="#"
-              className="flex items-center gap-5 text-muted-foreground transition-colors hover:text-primary p-2"
+              className="flex items-center gap-5 text-base text-muted-foreground transition-colors hover:text-primary p-2"
             >
               Unsolved tickets
             </Link>
